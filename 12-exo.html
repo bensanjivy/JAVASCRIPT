@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            créer un nouveau fichier 12-exo.html
+
+            créer une class Page 
+
+                1/ méthode constructor
+                    dispose 3 paramètres : titre , contenu , auteur
+                    initiatialiser les propriétés de la class titre , contenu , auteur avec 
+                    les valeurs des trois paramètres
+
+                2/ methode render() 
+                    afficher dans la console : titre de la page + contenu 
+
+            créer un objet home instance de Page ( "home" , "bonjour" , "moi")
+            créer un objet contact  instance de Page ("page de contact" , "nous contacter" , "moi" )
+        
+            dans la console, il faut afficher
+            1/ home bonjour
+            2/ page de contact nous contacter
+        */
+
+        class Page {
+            constructor(titre, contenu, auteur) {
+                this.titre = titre;
+                this.contenu = contenu;
+                this.auteur = auteur;
+            }
+            render() {
+                console.log(this.titre + " " + this.contenu)
+            }
+        }
+
+        let home = new Page("home", "bonjour", "moi");
+        home.render();
+
+        // en utiliant CLASS
+        let contact = new Page("page de contact", "nous contacter", "moi");
+        contact.render();
+
+        // type OBJET
+        // let contact2 = {
+        //     titre: "page de contact",
+        //     contenu: "nous contacter",
+        //     auteur: "moi",
+        //     render() {
+        //         console.log(this.titre + " " + this.contenu)
+        //     }
+        // }
+        // contact2.render();
+
+
+    </script>
+</body>
+</html>

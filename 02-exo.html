@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // dès que vous créer une variable => let 
+        let a = 2 ;
+        const b = "bonjour"; // let ou mieux const 
+            a = 3 ;
+        const c = a + b ; // let ou mieux const 
+
+        console.log( a );
+        console.log( b );
+        console.log( c );// 3 lignes dans la console 
+
+        console.log( a , b , c ); // 1 seule ligne dans la console 
+
+        // créer des chaines de caractères "" '' ``
+        // est ce qu'il y a un meilleur ?? => NON 
+        // il faut connaitre les 3 manières de faire 
+
+        // créer des chaines de caractères avec "" ''  +
+        // historique => disponible dès 1996 
+
+        // `` => créer en 2015 avec la version ES6 de javascript
+        // ${ } (attention vous ne pouvez pas utiliser avec les doubles quotes  "" ou quote simple apostrophe  ''
+
+        // "" ''
+        let phrase1 = "bonjour les amis";
+        let phrase2 = 'bonjour les amis';
+
+        // les deux manières d'écrire sont équivalentes 
+
+        // Qu'est ce qu'il se passe si je veux écrire apostrophe dans une chaine de caractères
+
+        let phrase3 = "j'ai découvert javascript" ; 
+        // si j'ai besoin d'ajouter une ' dans ma chaine 
+
+        let phrase4 = 'j\'ai décourvert javascript';
+        // si j'ai besoin d'ajouter une ' dans la chaine échapper l'apostrophe 
+        // le symbole \ collé à l'apostrophe 
+
+        let phrase5 = "Victor Hugo a dit \"Vive Paris\"  ";
+
+        let phrase6 = 'Victor Hugo a dit "Vive Paris"';
+        // pas besoin d'échapper 
+
+        let html = "<h1>Titre principal</h1>";
+
+        let html2 = "<p class=\"intro\">Hello</p>";
+
+        let html3 = "<p class='intro'>Hello</p>" ;
+
+        let html4 = '<p class="intro">Hello</p>';
+
+        let html4 = '<p class=\'intro\'>Hello</p>';
+
+        // les 4 écritures sont équivalentes !! 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            créer un nouveau fichier 08-exo.html
+            contient un objet auteur 
+            cet objet dispose des propriétés suivantes :
+                prenom Victor
+                nom Hugo
+                oeuvre objet 
+                    titre Notre Dame de Paris
+                    dtPublication  1831
+                    personnage objet :
+                        perso1 : "Esmeralda "
+                        perso2 :  "Quasimodo"     
+                        
+            écrire dans la console (à partir de l'objet) les phrases suivantes :
+
+            1/ Victor Hugo a écrit Notre Dame de Paris en 1831
+            2/ Les deux principaux personnages de l'oeuvre sont Esmeralda et Quasimodo
+
+        */
+
+       let auteur = {
+           prenom : 'Victor',
+           nom : "Hugo",
+           oeuvre : {
+               titre: "Notre Dame de Paris",
+               dtPub : 1831,
+               personnage: {
+                   perso1: "Esmeralda",
+                   perso2: "Quasimodo"
+               }
+           }
+       }
+       console.log(`${auteur.prenom} ${auteur.nom} a écrit ${auteur.oeuvre.titre} en ${auteur.oeuvre.dtPub}`)
+       console.log(`Les deux principaux personnages de l'oeuvre sont 
+                        ${auteur.oeuvre.personnage.perso1} et ${auteur.oeuvre.personnage.perso2}`)
+    </script>
+</body>
+</html>

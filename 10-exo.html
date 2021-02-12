@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            créer un nouveau fichier 10-exo.html
+
+            créer un objet carre 
+            cet objet dispose de deux méthodes
+            1/ aire - qui contient les instructions suivantes :
+                variable cote = 16
+                calcul aire1 = cote x cote
+                afficher dans la console le texte suivant :
+                Un carré de côté 16 dispose d'une aire de aire1 
+
+            2/ perimetre - qui contient les instructions suivantes :
+                variable cote = 16
+                calcul perimetre1 = cote x 4
+                afficher dans la console le texte suivant 
+                Un carré de côté 16 dispose d'un périmètre de perimetre1
+
+            exécuter les méthodes aire et perimètre de l'objet carre
+
+        */
+
+       let carre = {
+           aire : function() {
+               let cote = 16;
+               let aire = cote * cote;
+               let p = `Une carre de côté ${cote} a une aire de ${aire}`
+               console.log(p)
+           },
+
+           perimetre: function() {
+               let cote = 16;
+               let perimetre = cote * 4;
+               let p = `Une carre de côté ${cote} dispose d'un périmetre de ${perimetre}`
+               console.log(p)
+           },
+
+        // ES6
+        volume() {
+            let cote = 16;
+            let volume = cote * cote * cote;
+            console.log(volume)
+        }
+       }
+       carre.aire();
+       carre.perimetre();
+       carre.volume();
+
+    
+        
+    </script>
+</body>
+</html>

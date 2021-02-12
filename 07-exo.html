@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            créer le fichier 07-exo.html 
+            contenir un objet dont le nom est formation 
+            plusieurs propriétés
+            nom : Formation Javascript
+            programme : objet 
+                jour1 : découverte
+                jour2 : poo et héritage
+                jour3 : cas pratique
+            duree : 5
+            unite : "jours"
+            niveau : grand débutant
+
+            1/ je veux afficher "Formation Javascript" dans console
+      
+            2/ afficher le programme de 2ème jour
+
+            // je veux écrire dans la console le texte suivant :
+            3/ Ma formation a duré 5 jours 
+                => deux manières ("" ou '' et ``)
+
+        */
+
+       let formation = {
+            nom : "Formation Javascript",
+            programme : { 
+                jour1 : "découverte",
+                jour2 :" poo et héritage",
+                jour3 : "cas pratique"
+            },
+            duree : 5,
+            unite : "jours",
+            niveau : "grand débutant"
+
+       }
+       console.log(formation.nom)
+       console.log(formation.programme.jour2)
+       console.log("Ma formation a duré " + formation.duree + " " + formation.unite);
+       console.log(`Ma formation a duré ${formation.duree} ${formation.unite}`)
+    </script>
+</body>
+</html>

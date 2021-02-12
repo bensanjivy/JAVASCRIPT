@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            créer le fichier 06-exo.html
+            créer un objet maison
+            objet possède plusieurs propriétés 
+                proprietaire : "votre prénom",
+                adresse : "75 rue du paradis",
+                ville : "Paris"
+                cp : 75000
+                prixAchat : 200000
+                unite : euros
+            afficher la variable maison dans la console 
+        */
+
+        let maison = {
+                proprietaire : "votre prénom",
+                adresse : "75 rue du paradis",
+                ville : "Paris",
+                cp : 75000,
+                prixAchat : 200000,
+                unite : "euros"
+        }
+
+        console.log(maison)
+        console.log(maison.adresse)
+
+
+        // objet vont stockés tous les types même on peut stocker le type objet 
+        let maison1 = {
+            proprietaire : "votre prénom",
+            location : {
+                adresse : "75 rue du paradis",
+                ville : "Paris",
+                cp : 75000,
+            },
+            prixAchat : 200000,
+            unite : "euros"
+        }
+        console.log(maison1.location.ville + " " + maison1.prixAchat)
+    </script>
+</body>
+</html>

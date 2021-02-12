@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            // j'ai découvert javascript lors d'une formation au GRETA
+            // "HTML" a été une langage créee en 1995, d'après moi
+        */
+
+        let p1 = "j'ai découvert javascript lors d'une formation au GRETA";
+        console.log(p1);
+        let p2 = 'j\'ai découvert javascript lors d\'une formation au GRETA';
+        console.log(p2);
+        // le caractère d'échappement \ ne s'affiche pas dans la console
+
+        let p3 = "\"HTML\" a été une langage créee en 1995, d'après moi";
+        console.log(p3);
+        let p4 = '"HTML" a été une langage créee en 1995, d\'après moi';
+        console.log(p4);
+
+        // `` 
+        // si vous avez à écrire "" ' ' pas besoin d'échapper 
+
+        let p5 = `j'ai découvert javascript lors d'une formation au GRETA`;
+        console.log(p5);
+        let p6 = `"HTML" a été une langage créee en 1995, d'après moi`;
+        console.log(p6);
+        // nouvelle manière `` => vous pouvez faire des sauts de lignes dans vos chaines de caractères 
+        let p7 = "bonjour \n hello"; // pour éviter l'erreur remplacer le saut par \n 
+        let p8 = ' bonjour \n  hello'; // erreur 
+
+        let p9 = `                bonjour                           
+        hello`; // ça marche 
+        console.log(p7, p8, p9);
+
+    </script>
+
+   
+</body>
+</html>

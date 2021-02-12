@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // créer mes deux variables 
+        // attention ne pas mettre d'accentuation dans les noms de variables
+        let prenom = "Victor";
+        let nom = "Hugo";
+        
+        // Victor Hugo a écrit les Misérables 
+        // en utilisant les variables prenom et nom 
+        // ADDITION de chaine de caractères => CONCATENATION
+        let phrase = prenom + " " + nom + " a écrit les Misérables";
+
+        console.log( phrase );
+
+        // Ecriture Equivalente  (1 seule instruction)
+        console.log( prenom + " " + nom + " a écrit les Misérables" );
+
+        // let var const 
+
+        // chaine de caractère "" '' ``
+
+        // Ecriture Equivalente  (1 seule instruction)
+        //  je peux utiliser ${} attention il faut OBLIGATOIREMENT que ma chaine de caractère
+        // template string => en 2015 avec la nouvelle version de JS ES6
+        let phrase2 = `${prenom} ${nom} a écrit les Misérables`;
+
+        console.log(phrase2)
+    </script>
+</body>
+</html>

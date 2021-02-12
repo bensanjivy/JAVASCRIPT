@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            créer le fichier 13-exo.html 
+            ce fichier contient un objet ordinateur
+            dispose de plusieurs propriétés 
+            modele IBM
+            anneeAchat 2015
+            processeur objet 
+                modele Intel
+                puissance 30
+                unite Go 
+            méthode start 
+            récupérer l'année d'achat du l'objet et 
+            afficher dans le console le texte suivant :
+            
+            Je suis une machine de anneeAchat 2015
+
+            Ecrire dans la console du navigateur les phrases suivantes :
+            1 Je suis un PC IBM avec un processeur Intel 
+            2 Mon processeur est un Intel 30 Go 
+
+        */
+
+        // 1/ TYPE OBJET
+        let ordinateur = {
+            modele : "IBM",
+            anneeAchat : 2015,
+            processeur : {
+                modele : "Intel",
+                puissance : 30,
+                unite : "Go"
+            },
+            start() {
+                console.log(`Je suis une machine de anneeAchat ${this.anneeAchat}`)
+            }
+        }
+        ordinateur.start();
+
+        console.log(`Je suis un PC ${ordinateur.modele} avec un processeur ${ordinateur.processeur.modele}`)
+        console.log(`Mon processeur est un ${ordinateur.processeur.modele} ${ordinateur.processeur.puissance} ${ordinateur.processeur.unite}`)
+
+        
+        // 2/ CLASS
+        class Ordinateur {
+            constructor(modele, anneeAchat, processeur) {
+                this.modele = modele;
+                this.anneeAchat = anneeAchat;
+                this.processeur = processeur;
+            }
+            start() {
+                console.log(`Je suis une machine de anneeAchat ${this.anneeAchat}`)
+            }
+        }
+
+        let proc = {
+            modele : "Intel",
+            puissance : 30,
+            unite : "Go"
+        }
+        // 1/
+        let pc = new Ordinateur(
+            "IBM", 
+            2015,
+            proc
+        )
+        // 2/
+        let pc1 = new Ordinateur(
+            "IBM", 
+            2015,
+            {
+                modele : "Intel",
+                puissance : 30,
+                unite : "Go"
+            }
+        )
+        pc.start();
+
+        // 1 Je suis un PC IBM avec un processeur Intel 
+        // 2 Mon processeur est un Intel 30 Go 
+        console.log(`Je suis un PC ${pc.modele} avec un processeur ${pc.processeur.modele} `)
+        console.log(`Mon processeur est un ${pc.processeur.modele} ${pc.processeur.puissance} ${pc.processeur.unite}`)
+
+    </script>
+</body>
+</html>

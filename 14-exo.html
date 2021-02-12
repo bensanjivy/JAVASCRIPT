@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            créer un fichier 14-exo.html
+            
+            créer la variable vechicule
+            train, tram, bus, voiture
+            0       1       2   3
+
+            afficher dans la console 
+                1/ tram et voiture
+                2/ vélo, train, tram, bus
+                3/ train, tram, bus, voiture, avion
+        */
+
+        let vechicule = ["train", "tram", "bus", "voiture"];
+        // 1/
+        console.log(vechicule[1] + " et " + vechicule[3]);
+      
+        // 2/
+        vechicule.unshift("vélo");
+        vechicule.pop();
+        console.log(vechicule)
+
+        // 3/
+        vechicule.shift(); // supprimé velo
+        vechicule.push("voiture", "avion");
+        console.log(vechicule)
+
+
+    </script>
+</body>
+</html>

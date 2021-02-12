@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            créer le fichier 15-exo.html
+            créer la variable courses
+            valeurs : pomme, poire, banane
+
+            1/ Est-ce que le tableau contient la chaine de caractère poire ?
+            2/ parcourir la variable avec les méthodes .map() // .forEach() 
+            3/ ajouter abricot à la fin de la variable
+            4/ supprimer le 3ème élement du tableau
+            5/ determiner l'index de la chaine abricot // .indexOf()
+            6/ determiner le nombre d'elements dans le tableau
+        */
+
+        let courses = ["pomme", "poire", "banane"];
+        // 1/ Est-ce que le tableau contient la chaine de caractère poire ?
+        
+        let verif = courses.includes("poire");
+        console.log(verif); // true
+
+        // 2/ parcourir la variable avec les méthodes .map() // .forEach() 
+
+        // map => ReactJS
+        courses.map(function (item) {return item});
+        console.log(courses)
+
+        // forEach
+        courses.forEach(function(item) {console.log(item)})
+
+        // 3/ ajouter abricot à la fin de la variable
+        courses.push("abricot");
+        console.log(courses)
+
+        // 4/ supprimer le 3ème élement du tableau
+        courses.splice(2,1)
+        console.log(courses)
+
+        // 5/ determiner l'index de la chaine abricot // .indexOf()
+        let index1 = courses.indexOf("abricot");
+        console.log(index1)
+
+        // 6/ determiner le nombre d'elements dans le tableau
+        console.log(courses.length)
+
+    </script>
+</body>
+</html>

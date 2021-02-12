@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            créer le fichier 11-exo.html
+            
+            objet - cercle
+            propriété rayon - 30
+
+            méthode aire 
+            récupérer la valeur du rayon de l'objet cercle et effectuer le calcul suivant
+            3.14 x rayon de l'objet cercle x rayon de l'objet cercle
+            ce résultat est à afficher dans la console 
+
+            méthode perimetre
+            2 x 3.14 x rayon de l'objet cercle
+            ce résultat est à afficher dans la console 
+
+            exécuter la méthode aire et la méthode perimetre de l'objet cercle 
+        */
+
+        let cercle = {
+            rayon : 30,
+            aire() {
+                let res1 = 3.14 * this.rayon * this.rayon
+                console.log(res1)
+            },
+            perimetre: function() {
+                let res2= 2 * 3.14 * this.rayon;
+                console.log(res2)
+            }
+        }
+        cercle.aire();
+        cercle.perimetre();
+        
+    </script>
+</body>
+</html>
